@@ -12,9 +12,13 @@
 		5BB329DD2260DB9C000B0EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB329DB2260DB9C000B0EC7 /* Main.storyboard */; };
 		5BB329DF2260DBA1000B0EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB329DE2260DBA1000B0EC7 /* Assets.xcassets */; };
 		5BB329E22260DBA1000B0EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB329E02260DBA1000B0EC7 /* LaunchScreen.storyboard */; };
+		5BB329EA2260E936000B0EC7 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB329E92260E936000B0EC7 /* CourseCell.swift */; };
+		5BB329EC2260F19B000B0EC7 /* ParseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB329EB2260F19B000B0EC7 /* ParseApi.swift */; };
+		754BA086116487004E74B4A5 /* Pods_UrlParsing_swift5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A728D106EBF3FAB387A739C /* Pods_UrlParsing_swift5.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A728D106EBF3FAB387A739C /* Pods_UrlParsing_swift5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrlParsing_swift5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB329D42260DB9C000B0EC7 /* UrlParsing_swift5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrlParsing_swift5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB329D72260DB9C000B0EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB329D92260DB9C000B0EC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		5BB329DE2260DBA1000B0EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BB329E12260DBA1000B0EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB329E32260DBA1000B0EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB329E92260E936000B0EC7 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		5BB329EB2260F19B000B0EC7 /* ParseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseApi.swift; sourceTree = "<group>"; };
+		CF739055E5F172CA6F194BA5 /* Pods-UrlParsing_swift5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrlParsing_swift5.debug.xcconfig"; path = "Target Support Files/Pods-UrlParsing_swift5/Pods-UrlParsing_swift5.debug.xcconfig"; sourceTree = "<group>"; };
+		EB8242E046F9E5DD4A1EBE97 /* Pods-UrlParsing_swift5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrlParsing_swift5.release.xcconfig"; path = "Target Support Files/Pods-UrlParsing_swift5/Pods-UrlParsing_swift5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754BA086116487004E74B4A5 /* Pods_UrlParsing_swift5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				5BB329D62260DB9C000B0EC7 /* UrlParsing_swift5 */,
 				5BB329D52260DB9C000B0EC7 /* Products */,
+				9831A61E44B52BF9913E6A48 /* Pods */,
+				772CCE8B853A9B3A167788CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +71,27 @@
 				5BB329DE2260DBA1000B0EC7 /* Assets.xcassets */,
 				5BB329E02260DBA1000B0EC7 /* LaunchScreen.storyboard */,
 				5BB329E32260DBA1000B0EC7 /* Info.plist */,
+				5BB329E92260E936000B0EC7 /* CourseCell.swift */,
+				5BB329EB2260F19B000B0EC7 /* ParseApi.swift */,
 			);
 			path = UrlParsing_swift5;
+			sourceTree = "<group>";
+		};
+		772CCE8B853A9B3A167788CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A728D106EBF3FAB387A739C /* Pods_UrlParsing_swift5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9831A61E44B52BF9913E6A48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF739055E5F172CA6F194BA5 /* Pods-UrlParsing_swift5.debug.xcconfig */,
+				EB8242E046F9E5DD4A1EBE97 /* Pods-UrlParsing_swift5.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB329E62260DBA1000B0EC7 /* Build configuration list for PBXNativeTarget "UrlParsing_swift5" */;
 			buildPhases = (
+				9A44807ADF7372542B38B37F /* [CP] Check Pods Manifest.lock */,
 				5BB329D02260DB9B000B0EC7 /* Sources */,
 				5BB329D12260DB9B000B0EC7 /* Frameworks */,
 				5BB329D22260DB9B000B0EC7 /* Resources */,
+				56F498024032A85E69450426 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +162,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56F498024032A85E69450426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UrlParsing_swift5/Pods-UrlParsing_swift5-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UrlParsing_swift5/Pods-UrlParsing_swift5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A44807ADF7372542B38B37F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UrlParsing_swift5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BB329D02260DB9B000B0EC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB329EA2260E936000B0EC7 /* CourseCell.swift in Sources */,
 				5BB329DA2260DB9C000B0EC7 /* ViewController.swift in Sources */,
+				5BB329EC2260F19B000B0EC7 /* ParseApi.swift in Sources */,
 				5BB329D82260DB9C000B0EC7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +365,7 @@
 		};
 		5BB329E72260DBA1000B0EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF739055E5F172CA6F194BA5 /* Pods-UrlParsing_swift5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		5BB329E82260DBA1000B0EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8242E046F9E5DD4A1EBE97 /* Pods-UrlParsing_swift5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
