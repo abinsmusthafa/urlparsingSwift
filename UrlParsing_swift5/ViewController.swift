@@ -20,7 +20,22 @@ class ViewController: UIViewController {
         ProgressHUD.show("Loding")
        let url = "https://api.letsbuildthatapp.com/jsondecodable/courses"
         
-    
+        ParseApi.parseAlamofire(url: url) { (course, err) in
+            
+            guard err == nil else{
+                print(err?.localizedDescription)
+                return
+            }
+            
+            if let courses = course{
+                self.coursesArray = courses
+                self.courseTableView.reloadData()
+                
+                ProgressHUD.dismiss()
+                
+            }
+            
+        }
         
        // parsing with alamofire
         

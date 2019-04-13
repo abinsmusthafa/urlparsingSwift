@@ -62,6 +62,42 @@ class ParseApi{
 //
 //    }
     
+ 
+    
+    class func parseAlamofire(url : String,  completion : @escaping ([Courses]?,Error?) -> () ) {
+    
+        Alamofire.request(URL(string: url)!).responseJSON { (response) in
+            
+            if let error = response.error{
+                completion(nil,error)
+                return
+            }
+            
+            if let data = response.data{
+                
+                do{
+                    let courses =  try JSONDecoder().decode([Courses].self, from: data)
+                    print(courses)
+                    completion(courses,nil)
+                    
+                }catch let JsonError{
+                    
+                    completion(nil,JsonError)
+                }
+                
+              
+                
+                
+                
+                
+            }
+            
+        }
+    
+    
+    }
+    
+    
     
     
     
